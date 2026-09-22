@@ -1,0 +1,11 @@
+# Python bytecode and local virtual environments
+__pycache__/
+*.py[cod]
+/.venv/
+/venv/
+
+# Generated evaluation output
+/logs/
+/evals_results/
+*.jsonl.cleaned
+.DS_store
