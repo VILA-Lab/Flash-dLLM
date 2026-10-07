@@ -1,11 +1,38 @@
 # Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs
 
-Official implementation of **Flash-dLLM**, a training-free inference acceleration framework for diffusion large language models.
+![](https://i.imgur.com/waxVImv.png)
 
-**Quan Nguyen-Tri, Mukul Ranjan, and Zhiqiang Shen**  
+<div align="center">
+
+[Quan Nguyen-Tri](https://scholar.google.com/citations?user=TBcqxpAAAAAJ&hl=en) &nbsp;
+[Mukul Ranjan](https://mukul54.github.io/) &nbsp;
+[Zhiqiang Shen](https://zhiqiangshen.com/)<sup> * </sup> &nbsp;
+
 VILA Lab, MBZUAI
 
-[Paper](docs/Flash_dLLM.pdf) | [Overview](#overview) | [Key results](#key-results) | [Setup](#setup) | [Evaluation](#evaluation) | [Citation](#citation)
+<sup>*</sup>Corresponding author
+
+[![arXiv](https://img.shields.io/badge/Paper-arXiv-red.svg)](https://arxiv.org/abs/2609.26796)
+[![Project](https://img.shields.io/static/v1?label=Project&message=Github&color=blue&logo=github-pages)](https://vila-lab.github.io/flash-dllm-webpage/)
+[![Our Page](https://img.shields.io/badge/Visit-Our%20Page-8C7AFF?style=flat)](https://vila-lab.github.io/flash-dllm-webpage/)
+[![GitHub issues](https://img.shields.io/github/issues/VILA-Lab/Flash-dLLM?color=FFF359&label=issues&style=flat)](https://github.com/VILA-Lab/Flash-dLLM/issues)
+[![GitHub stars](https://img.shields.io/github/stars/VILA-Lab/Flash-dLLM?color=FF6A07&style=flat)](https://github.com/VILA-Lab/Flash-dLLM/stargazers)
+[![GitHub license](https://img.shields.io/github/license/VILA-Lab/Flash-dLLM?color=FF6666)](https://github.com/VILA-Lab/Flash-dLLM/blob/main/LICENSE)
+
+</div>
+
+---
+
+Official implementation of **Flash-dLLM**, a training-free inference acceleration framework for diffusion large language models. Demo videos are on the [project page](https://vila-lab.github.io/flash-dllm-webpage/).
+
+## Contents
+
+- [Overview](#overview)
+- [Key results](#key-results)
+- [Setup](#setup)
+- [Evaluation](#evaluation)
+- [Results and logs](#results-and-logs)
+- [Citation](#citation)
 
 ## Overview
 
@@ -222,14 +249,20 @@ Run post-processing separately for each verification mode's samples file. This u
 Please cite the paper when using Flash-dLLM in your research:
 
 ```bibtex
-@misc{nguyentri2026flashdllm,
-  title  = {{Flash-dLLM}: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs},
-  author = {Nguyen-Tri, Quan and Ranjan, Mukul and Shen, Zhiqiang},
-  year   = {2026},
-  note   = {Preprint}
+@article{nguyentri2026flashdllm,
+  title   = {{Flash-dLLM}: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs},
+  author  = {Nguyen-Tri, Quan and Ranjan, Mukul and Shen, Zhiqiang},
+  journal = {arXiv preprint arXiv:2609.26796},
+  year    = {2026}
 }
 ```
 
 ## Acknowledgments
 
 This work is supported by the MBZUAI-WIS Joint Program for Artificial Intelligence Research.
+
+This repository is built upon [LLaDA](https://github.com/ML-GSAI/LLaDA), [Fast-dLLM](https://github.com/NVlabs/Fast-dLLM), [Elastic-Cache](https://github.com/VILA-Lab/Elastic-Cache), and [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness).
+
+## License
+
+This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for details.
