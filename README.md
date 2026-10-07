@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/flash-dllm-logo.svg" alt="Flash-dLLM logo" width="110">
+</p>
+
 # Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs
 
 ![](https://i.imgur.com/waxVImv.png)
